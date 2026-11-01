@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>سنة نسك ١٤٤٧هـ – لوحة مؤشرات المستخدمين</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#F6F7F3;--surface:#FFFFFF;--ink:#1B2A27;--muted:#5E716B;--line:#DCE3DE;--g:#0F4C3A;--c2:#7FB09B;--c3:#0F4C3A;--c4:#C9A24B;--chip:#E8F0EB;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0E1715;--surface:#15221F;--ink:#E6EEEA;--muted:#9DB0A8;--line:#2A3B36;--g:#5FBF9A;--c2:#4F8F7A;--c3:#3FA37F;--c4:#D9B65F;--chip:#1E302B}}
+:root[data-theme="dark"]{--bg:#0E1715;--surface:#15221F;--ink:#E6EEEA;--muted:#9DB0A8;--line:#2A3B36;--g:#5FBF9A;--c2:#4F8F7A;--c3:#3FA37F;--c4:#D9B65F;--chip:#1E302B}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",Tahoma,Arial,sans-serif;line-height:1.7}
+main{max-width:1040px;margin:0 auto;padding:28px 20px 56px}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.25;margin:0 0 8px;font-weight:700;color:var(--g)}
+h2{font-size:22px;margin:0 0 6px}
+.lead{color:var(--muted);max-width:60ch;margin:0 0 20px}
+.hero{display:grid;grid-template-columns:1fr;gap:12px;align-items:center}
+@media(min-width:860px){.hero{grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:24px}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}
+.tabs button{font:inherit;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 16px;border-radius:999px;cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--g);color:var(--bg);border-color:var(--g)}
+button:focus-visible,.bar:focus-visible{outline:3px solid var(--c4);outline-offset:2px}
+svg{width:100%;height:auto;display:block}
+.bar{cursor:pointer;transition:opacity .2s,stroke-width .2s}
+.dim{opacity:.18}
+.ring-lbl{font-size:12px;fill:var(--muted)}
+.ring-lbl.on{fill:var(--ink);font-weight:700}
+section{margin-top:44px}
+.split{display:flex;height:44px;border-radius:8px;overflow:hidden;margin:14px 0 8px}
+.split div{display:flex;align-items:center;padding:0 14px;color:#fff;font-weight:700}
+.row{display:grid;grid-template-columns:110px 1fr auto;gap:12px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line)}
+.track{height:14px;background:var(--chip);border-radius:7px;overflow:hidden}
+.fill{height:100%;border-radius:7px}
+.chip{font-size:13px;background:var(--chip);padding:2px 10px;border-radius:999px;white-space:nowrap}
+.recs{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.rec{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px 18px;border-inline-start:5px solid var(--c4)}
+.rec h3{margin:0 0 4px;font-size:17px}.rec p{margin:0;font-size:15px}
+.rec .ev{color:var(--muted);font-size:13px;margin-top:8px}
+.note{background:var(--chip);border-radius:10px;padding:14px 18px;font-size:15px}
+.note+.note{margin-top:10px}
+footer{margin-top:44px;color:var(--muted);font-size:13px}
+.num{font-variant-numeric:tabular-nums}
+@media(prefers-reduced-motion:reduce){.bar{transition:none}}
+</style>
+</head>
+<body>
+<main>
+<div class="hero">
+  <div>
+    <h1>سنة نسك ١٤٤٧هـ في حلقة واحدة</h1>
+    <p class="lead">كل شعاع شهر هجري، وطوله عدد مستخدمي تطبيق نسك فيه. الأشهر الثلاثة الأولى بلا بيانات، لأن ملف الربع الأول لم يصل بعد. اضغط على أي شهر لتعرف رقمه.</p>
+    <div class="tabs" role="group" aria-label="تصفية حسب الربع">
+      <button data-q="all" aria-pressed="true">كل الأرباع</button>
+      <button data-q="2" aria-pressed="false">الربع الثاني</button>
+      <button data-q="3" aria-pressed="false">الربع الثالث</button>
+      <button data-q="4" aria-pressed="false">الربع الرابع</button>
+    </div>
+  </div>
+  <svg id="ring" viewBox="0 0 520 520" dir="ltr" role="img" aria-label="مخطط دائري لمستخدمي نسك حسب الأشهر الهجرية"></svg>
+</div>
+
+<section>
+  <h2>الجنس: توزيع شبه متساوٍ</h2>
+  <div class="split" role="img" aria-label="ذكور ٥٠٫١٪ وإناث ٤٩٫٩٪">
+    <div style="width:50.1%;background:var(--c3)">ذكور 50.1%</div>
+    <div style="width:49.9%;background:var(--c4);color:#1B2A27">إناث 49.9%</div>
+  </div>
+  <p class="lead num">ذكور 8,108,281 &nbsp;|&nbsp; إناث 8,075,610 &nbsp;|&nbsp; الإجمالي 16,183,891</p>
+</section>
+
+<section>
+  <h2>الأرباع: الثالث يتصدر والرابع يتراجع</h2>
+  <div id="quarters"></div>
+</section>
+
+<section>
+  <h2>توصيات مبنية على الأرقام</h2>
+  <div class="recs" id="recs"></div>
+</section>
+
+<section>
+  <h2>حدود هذا التحليل</h2>
+  <div class="note"><b>الفئات العمرية غير متوفرة:</b> المجموعة المنشورة على البوابة بعنوان «عدد مستخدمي تطبيق نسك حسب الفئات العمرية لعام 1447هـ» يعرض محتواها صفين فقط (ذكر 8,108,281 وأنثى 8,075,610)، أي بيانات الجنس وليس الفئات العمرية. تحققت من ذلك بتاريخ 1 نوفمبر 2026، ولهذا لم تُعرض هنا ولم تُقدَّر أرقامها. ستُضاف عند تصحيح المصدر.</div>
+  <div class="note"><b>فرق الإجماليات:</b> مجموع الأرباع الثلاثة (13,484,542) أقل من إجمالي الجنس (16,183,891) بفارق 2,699,349. قد يكون السبب غياب الربع الأول أو اختلاف التعريف (مستخدمون فريدون مقابل شهريين).</div>
+  <div class="note"><b>الأسباب:</b> ربط التغيرات بالمواسم تفسير مقترح وليس مثبتاً بالبيانات المتاحة.</div>
+</section>
+<footer>المصدر: وزارة الحج والعمرة، مجموعات بيانات مستخدمي تطبيق نسك لعام 1447هـ (الجنس، والربع الثاني، والثالث، والرابع) المنشورة على البوابة الوطنية للبيانات المفتوحة. تاريخ الاطلاع: 1 نوفمبر 2026.</footer>
+</main>
+<script>
+var M=[["محرم",1,null],["صفر",1,null],["ربيع الأول",1,null],["ربيع الآخر",2,1911849],["جمادى الأولى",2,1453337],["جمادى الآخرة",2,1529293],["رجب",3,1515228],["شعبان",3,1618819],["رمضان",3,2403641],["شوال",4,1145999],["ذو القعدة",4,1133893],["ذو الحجة",4,772483]];
+var col={2:"var(--c2)",3:"var(--c3)",4:"var(--c4)"};
+var fmt=function(n){return n.toLocaleString("en-US")};
+var pct=function(a,b){var p=(a-b)/b*100;return (p>0?"+":"")+p.toFixed(1)+"%"};
+var svg=document.getElementById("ring"),NS="http://www.w3.org/2000/svg",cx=260,cy=260,r0=72,L=108,max=2403641;
+function el(t,a,txt){var e=document.createElementNS(NS,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;return e}
+var bars=[],lbls=[];
+M.forEach(function(m,i){
+  var a=(-90+i*30+15)*Math.PI/180,c=Math.cos(a),s=Math.sin(a),has=m[2]!=null,len=has?Math.max(10,m[2]/max*L):16;
+  var ln=el("line",{x1:cx+r0*c,y1:cy+r0*s,x2:cx+(r0+len)*c,y2:cy+(r0+len)*s,"stroke-width":has?24:10,"stroke-linecap":"round",stroke:has?col[m[1]]:"var(--line)","class":"bar",tabindex:has?0:-1,role:has?"button":"img","aria-label":m[0]+(has?": "+fmt(m[2]):": لا توجد بيانات")});
+  if(!has)ln.setAttribute("stroke-dasharray","1 14");
+  svg.appendChild(ln);bars.push(ln);
+  var R=r0+L+24,lx=cx+R*c,ly=cy+R*s+4,t=el("text",{x:lx,y:ly,"text-anchor":Math.abs(c)<.3?"middle":(c>0?"start":"end"),"class":"ring-lbl"},m[0]);
+  svg.appendChild(t);lbls.push(t);
+  if(has){var go=function(){show(i)};ln.addEventListener("click",go);ln.addEventListener("focus",go);ln.addEventListener("mouseenter",go);
+    ln.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go()}})}
+});
+var c1=el("text",{x:cx,y:cy-10,"text-anchor":"middle","font-size":15,fill:"var(--muted)"}),
+    c2=el("text",{x:cx,y:cy+20,"text-anchor":"middle","font-size":26,"font-weight":700,fill:"var(--ink)"}),
+    c3=el("text",{x:cx,y:cy+42,"text-anchor":"middle","font-size":12.5,fill:"var(--muted)"});
+svg.appendChild(c1);svg.appendChild(c2);svg.appendChild(c3);
+var tot=M.reduce(function(s,m){return s+(m[2]||0)},0);
+function home(){c1.textContent="مجموع الأشهر التسعة";c2.textContent=fmt(tot);c3.textContent="مستخدم من ربيع الآخر إلى ذو الحجة";lbls.forEach(function(l){l.classList.remove("on")})}
+function show(i){var m=M[i];c1.textContent=m[0];c2.textContent=fmt(m[2]);
+  c3.textContent=(i>3&&M[i-1][2])?pct(m[2],M[i-1][2])+" عن "+M[i-1][0]:"أول شهر في البيانات";
+  lbls.forEach(function(l,j){l.classList.toggle("on",j===i)})}
+home();
+document.querySelectorAll(".tabs button").forEach(function(b){b.addEventListener("click",function(){
+  document.querySelectorAll(".tabs button").forEach(function(x){x.setAttribute("aria-pressed",x===b)});
+  var q=b.dataset.q;bars.forEach(function(ln,i){ln.classList.toggle("dim",q!=="all"&&M[i][1]!==+q)});
+  lbls.forEach(function(l,i){l.style.opacity=(q!=="all"&&M[i][1]!==+q)?.3:1});home()})});
+var Q=[["الربع الثاني",2,4894479],["الربع الثالث",3,5537688],["الربع الرابع",4,3052375]],qt=Q.reduce(function(s,q){return s+q[2]},0),qh="";
+Q.forEach(function(q,i){qh+='<div class="row"><b>'+q[0]+'</b><div class="track"><div class="fill" style="width:'+(q[2]/5537688*100)+'%;background:'+col[q[1]]+'"></div></div><span class="num">'+fmt(q[2])+' <span class="chip">'+(q[2]/qt*100).toFixed(1)+'%'+(i?' | '+pct(q[2],Q[i-1][2]):'')+'</span></span></div>'});
+document.getElementById("quarters").innerHTML=qh;
+var recs=[
+["جهّزوا الدعم قبل رمضان","قفز المستخدمون في رمضان بنسبة 48.5% عن شعبان (2,403,641 مقابل 1,618,819). يُقترح رفع سعة الخوادم وفريق الدعم قبل الموسم بأسابيع.","الدليل: أعلى شهر في السنة"],
+["ثبّتوا المستخدمين بعد الذروة","انخفض العدد في شوال بنسبة 52.3% عن رمضان. يُقترح حملات إشعارات وخدمات تبقي المستخدم نشطاً بعد الموسم.","الدليل: 2,403,641 ثم 1,145,999"],
+["افحصوا ذو الحجة قبل الاستنتاج","هو أقل شهر (772,483) وأقل بنحو 68% من رمضان. قد يعكس نمط استخدام موسم الحج أو قناة أخرى، لذا يُقترح التحقق قبل أي قرار.","الدليل: أدنى رقم في البيانات"],
+["لا حاجة لاستهداف جنس بعينه","التوزيع 50.1% مقابل 49.9%، فالمحتوى والتصميم يخدمان الجميع. الفرق الحقيقي سيظهر في الفئات العمرية عند توفرها.","الدليل: فرق 32,671 مستخدماً فقط"],
+["أكملوا الصورة","أضيفوا الربع الأول والفئات العمرية، وفسّروا فرق 2.7 مليون بين الإجماليات، وقارنوا بعام 1446هـ لمعرفة النمو الحقيقي.","الدليل: حدود التحليل أعلاه"]];
+document.getElementById("recs").innerHTML=recs.map(function(r){return '<div class="rec"><h3>'+r[0]+'</h3><p>'+r[1]+'</p><div class="ev">'+r[2]+'</div></div>'}).join("");
+</script>
+</body>
+</html>
